@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicción del Precio del Oro</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Predicción del Precio del Oro</h1>
+    
+    <form id="formulario">
+      <label for="horizon">Elige horizonte de predicción:</label>
+      <select id="horizon">
+        <option value="1">1 día</option>
+        <option value="5" selected>5 días</option>
+        <option value="10">10 días</option>
+      </select>
+
+      <button type="submit">Predecir</button>
+    </form>
+
+    <div id="resultado">
+      <h2>Resultado:</h2>
+      <pre id="output">Esperando datos...</pre>
+    </div>
+
+    <!-- Gráfico Chart.js -->
+    <canvas id="chart" width="600" height="300"></canvas>
+  </div>
+
+  <!-- Enlace al archivo de JavaScript -->
+  <script src="/static/script.js"></script>
+</body>
+</html>
